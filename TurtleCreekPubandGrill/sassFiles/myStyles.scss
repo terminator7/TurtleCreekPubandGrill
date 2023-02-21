@@ -1,0 +1,30 @@
+
+$font-family-sans-serif: 'Roboto Slab', serif;
+
+$turtlePrimary: #4f9360;
+$turtleSecondary:  #aa9274;
+$turtleSubPrimary: #366642;
+$turtleSubSecondary: #534737;
+$turtleDanger: #bd0303;
+
+$primary: $turtlePrimary;
+$secondary: $turtleSecondary;
+$danger: $turtleSubPrimary;
+$warning: $turtleSubSecondary;
+
+$navbar-dark-color: white;
+$navbar-dark-hover-color: $turtleSubSecondary;
+$navbar-dark-active-color: $turtleSubSecondary;
+
+$card-border-radius: .5rem;
+$card-border-width: .125rem;
+
+
+$input-border-color: #182c1d;
+$input-focus-border-color: $turtleSubPrimary;
+
+$form-feedback-icon-invalid-color:  $turtleDanger;
+$form-feedback-invalid-color:       $turtleDanger;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');

@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/customStyles.css">
+    <link rel="stylesheet" href="/font/bootstrap-icons.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+    <link rel="manifest" href="/images/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <!---Navigation Bar-->
+    <div class="container-fluid border-bottom border-5 border-secondary" id="navBarContainer">
+        <div class="row">
+            <div class="col-12 col-lg-12 p-0 d-flex justify-content-center"><a href="/"><img src="/images/mainLogo.png" class="img-fluid" alt="TurtleCreekLogo"></a></div>
+        </div>
+        <div class="row">
+            <div class="col-12 p-0 d-flex align-items-end">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-primary flex-fill pb-0">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler mb-1" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/">Home</a>
+                                </li>
+                                <li class="nav-item"><a href="/menu" class="nav-link active" aria-current="page">Menu</a></li>
+                                <li class="nav-item"><a href="/catering" class="nav-link">Catering</a></li>
+                                <li class="nav-item"><a href="/events" class="nav-link">Events</a></li>
+                                <li class="nav-item"><a href="/about" class="nav-link">About Us</a></li>
+                                <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+                            </ul>
+                            <ul class="navbar-nav ms-auto ">
+                                <li class="py-1">
+                                    <div class="socialMedia text-white d-flex flex-row justify-content-center">
+                                        <a class="fs-5 nav-link mx-sm-2 mx-md-2 mx-lg-1 mx-2 social"
+                                            href="https://www.google.co.in/maps/place/128+Triad+Center+W,+O'Fallon,+MO+63366/@38.7883645,-90.7195882,17z/data=!3m1!4b1!4m5!3m4!1s0x87ded059b7ce53ab:0x9f9ce4e6c4e48aa2!8m2!3d38.7883645!4d-90.7173995"><i
+                                                class="bi bi-geo-alt-fill"></i></a>
+                                        <a class="fs-5 nav-link mx-sm-2 mx-md-2 mx-lg-1 mx-2 social"
+                                            href="tel:6362943458"><i class="bi bi-telephone-forward"></i> </a>
+                                        <a href="https://www.facebook.com/turtlecreekpub/"
+                                            class="nav-link fs-5 mx-sm-2 mx-md-2 mx-lg-1 mx-2 social"><i
+                                                class="bi bi-facebook"></i></a>
+                                    </div>
+                                <li
+                                    class="nav-item d-flex align-items-center justify-content-center mb-2 mb-sm-2 mb-md-2 mb-lg-0">
+                                    <a href="/#orderNow" class="btn btn-secondary text-white">ORDER NOW</a>
+                                </li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!---Body of the Main Page-->
+    <!---Beginning of Menu TabBar-->
+    <nav class="navbar navbar-expand-lg bg-light sticky-top border-bottom border-5 border-secondary">
+        <div class="container-fluid" id="menuBar"  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContents" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="myContainer w-100 text-center">
+                <a class="custom-navbar-brand text-dark" id="navBrand" href="#">Appetizers</a>
+                <span class="dropdown-toggle py-1 my-dropdown-toggle float-end"></span>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContents">
+                <ul class="custom-navbar-nav mb-2 mb-lg-0">
+                    <li><a class="dropdown-item text-center active" href="#appetizerMenu">Appetizers</a></li>
+                    <li><a class="dropdown-item text-center" href="#sandwichMenu">Sandwiches</a></li>
+                    <li><a class="dropdown-item text-center" href="#burgerMenu">Burger</a></li>
+                    <li><a class="dropdown-item text-center" href="#entreesMenu">Entrees</a></li>
+                    <li><a class="dropdown-item text-center" href="#pastaMenu">Pasta</a></li>
+                    <li><a class="dropdown-item text-center" href="#pizzaMenu">Pizza</a></li>
+                    <li><a class="dropdown-item text-center" href="#specialtyPizzaMenu">Specialty Pizza</a></li>
+                    <li><a class="dropdown-item text-center" href="#soupsaladMenu">Soups & Salads</a></li>
+                    <li><a class="dropdown-item text-center" href="#wrapMenu">Wraps</a></li>
+                    <li><a class="dropdown-item text-center" href="#sidesMenu">A La Carte</a></li>
+                    <li><a class="dropdown-item text-center" href="#kidsMenu">Junior Turtles</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---End Of Menu TabBar-->
+
+    
+    <div id="appetizerMenu" class="menuSection">
+        <h3 class="text-center bg-warning text-white py-1">Appetizers</h3>
+        <div class="cardGroup row px-1 px-sm-1 px-lg-5 mx-lg-5 mx-2 mx-sm-2 mx-md-2">
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body pb-0">
+                        <h5 class="card-title text-center">Toasted Beef Ravioli</h5>
+                        <p class="card-text px-4">
+                            A St.Louis tradition, served with out house made marinara.
+                        </p>
+                    </div>
+                    <div class="foodInformation mt-2 mx-3 py-0 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">8 Piece <span class="float-end">$8.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body pb-0">
+                        <h5 class="card-title text-center">Pretzel Sticks</h5>
+                        <p class="card-text px-4">Soft Bavarian pretzels, oven roasted and served warm from the oven, accompanied with our queso and honey mustard for dipping</p>
+                    </div>
+                    <div class="foodInformation mt-2 mx-3 py-0 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">3 Piece <span class="float-end">$8.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Buffalo Chicken Balls</h5>
+                        <h6 class="text-center fw-bold text-danger">House Specialty!</h6>
+                        <p class="card-text px-4">House-made buffalo chicken cheese balls, breaded in Chef Mark's famous breading, deep fried golden brown Served with Ranch.</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">6 Piece <span class="float-end">$10.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Wisconsin Cheese Curds</h5>
+                        <p class="card-text px-4">Enjoy our battered & deep friend Wisconsin white cheddar cheese curds! Seasoned with a hint of Cajun or Garlic Parmesan and served with Ranch</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Basket <span class="float-end">$9.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Fried Pickle Chips</h5>
+                        <h6 class="text-center fw-bold text-danger">House Specialty</h6>
+                        <p class="card-text px-4">Hand breaded and deep fried to golden brown and served in a basket with our Spicy Ranch</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Basket <span class="float-end">$7.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Pork Rinds</h5>
+                        <p class="card-text px-4">Enjoy our deep fried, golden brown pork rinds seasonsed with choice of Cajun, Garlic Parmesan or BBQ seasonings</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Basket <span class="float-end">$6.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Chicken Wings</h5>
+                        <p class="card-text px-4">Jumbo bone-in wings, deep fried golden brown and tossed with your choice of sauces. Served with celery, ranch or bleu cheese</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold m-0">6 Piece <span class="float-end">$8.00</span></p>
+                        <p class="text-danger fw-bold">12 Piece <span class="float-end">$14.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Boneless Wings</h5>
+                        <p class="card-text px-4">Breaded and deep fried golden brown, then tossed with one of our house made sauces or served on the side</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold m-0">&frac12 LB. <span class="float-end">$8.00</span></p>
+                        <p class="text-danger fw-bold">1 LB.<span class="float-end">$14.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Buffalo Chicken Nachos</h5>
+                        <p class="card-text px-4">House made tortilla chips, drizzled with our queso covered in our three cheese blend, bacon, blue cheese crumbles and diced chicken, drizzled with mild sauce, ranch and garnished with diced tomato</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">6 Piece<span class="float-end">$9.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Pork "Wings"</h5>
+                        <h6 class="text-center fw-bold text-danger">Here is something different!</h6>
+                        <p class="card-text px-4">2oz pork shanks, deep fried and tossed in sweet Thai sauce & lightly covered with our onion tanglers</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">5 Piece<span class="float-end">$8.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Smothered Fries</h5>
+                        <p class="card-text px-4">A generous portion of our seasoned fries covered in house-made queso and layered with andouille sausage, bacon and our 3 blend cheese & cheddar, melted to golden brown, finished off with green onions</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Basket<span class="float-end">$7.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Cheese or Chicken Quesadilla</h5>
+                        <p class="card-text px-4">Grilled Chicken or Cheese Quesadilla sautéed with green peppers, onion and taco seasoning, garnished with lettuce and tomato and wrapped in a grilled tortilla with our melted cheese blend. Served with sour cream and salsa.</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold m-0">Cheese<span class="float-end">$7.00</span></p>
+                        <p class="text-danger fw-bold">Chicken<span class="float-end">$9.00</span></p>
+
+                    </div>
+                </div>
+            </div>
+         </div>  
+    </div>
+    <div id="sandwichMenu" class="menuSection">
+        <h3 class="text-center bg-warning text-white py-1">Sandwiches</h3>
+        <div class="cardGroup row px-1 px-sm-1 px-lg-5 mx-lg-5 mx-2 mx-sm-2 mx-md-2">
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Buffalo Chicken Sandwich</h5>
+                        <p class="card-text px-4">Our hand battered chicken breast strips, deep fried golden brown and tossed in buffalo sauce and topped with pepper jack cheese, served on a kaiser roll</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Price<span class="float-end">$11.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">California Turkey Club</h5>
+                        <h6 class="text-center text-danger fw-bold">House Specialty</h6>
+                        <p class="card-text px-4">Our hand battered chicken breast strips, deep fried golden brown and tossed in buffalo sauce and topped with pepper jack cheese, served on a kaiser roll</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Price<span class="float-end">$10.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Turtle Creek Melt sandwich</h5>
+                        <h6 class="text-center text-danger fw-bold">House Specialty</h6>
+                        <p class="card-text px-4">Sliced turkey piled high, lightly grilled and topped with provolone cheese, avocado and placed on a bed of lettuce, tomatoes & bacon on a grilled croissant. Served with a side of mayo</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Price<span class="float-end">$9.50</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Cod Hoagie sandwich</h5>
+                        <p class="card-text px-4">Two  Beer Battered fillets of tender Cod, and deep fried until golden brown, served on a toasted hoagie with lettuce, onions and side of tartar sauce</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Price<span class="float-end">$10.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Turtle Creek BLT sandwich</h5>
+                        <h6 class="text-center text-danger fw-bold">House Specialty</h6>
+                        <p class="card-text px-4">Layers of crispy bacon, lettuce and tomatoes served on white toast with mayo on the side</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Price<span class="float-end">$9.50</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Fried Bologna sandwich</h5>
+                        <p class="card-text px-4">Remember when?! Well ours is awesome too! 2 thick slices of bologna, topped with melted American cheese, sliced tomato & bacon served on our toasted hearty white bread.</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Price<span class="float-end">$9.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Smothered Chicken sandwich</h5>
+                        <p class="card-text px-4">Charbroiled chicken breast tenders topped with sautéed onions, bacon and cheddar cheese Served on a grilled kaiser roll</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Price<span class="float-end">$11.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">French Dip sandwich</h5>
+                        <p class="card-text px-4">Tender beef piled high on a hoagie with melted Swiss cheese and au jus</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Price<span class="float-end">$9.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Philly Steak Hoagie</h5>
+                        <p class="card-text px-4">Tender beef piled high on a French baguette with sautéed peppers and onions, topped with provolone. Served with au jus</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Price<span class="float-end">$11.00</span></p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div id="burgerMenu" class="menuSection">
+        <h3 class="text-center bg-warning text-white py-1">Burger</h3>
+        <div class="cardGroup row px-1 px-sm-1 px-lg-5 mx-lg-5 mx-2 mx-sm-2 mx-md-2">
+            <div class="col-12 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Build Your Own Burger!</h5>
+                        <p class="card-text px-4">1/3 lb. patty cooked to order and served on a kaiser roll. Lettuce, Tomato, Pickles & Onion served on request. Served with Pub Chips, Fries or Onion Tangiers</p>
+                        <h6 class="fw-bold text-danger text-center">ADD YOUR CHOICE OF TOPPINGS!</h6>
+                        <div class="row mt-3">
+                            <div class="col-12 col-sm-12 col-lg-6 d-flex flex-column justify-content-end">
+                                <div class="dollarToppings">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">2 Piece of Bacon</li>
+                                        <li class="list-group-item">Fried Egg</li>
+                                        <li class="list-group-item">Queso</li>
+                                    </ul>
+                                    <div class="foodInformation mt-2 py-0 mx-0 border-top border-warning border-2">
+                                        <p class="text-danger fw-bold">Price<span class="float-end">$1 Each</span></p>
+                                    </div>
+                                </div>
+                                <div class="otherToppings">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Avocado</li>
+                                        <li class="list-group-item">Sautéed Mushrooms</li>
+                                        <li class="list-group-item">Cajun Seasoning</li>
+                                        <li class="list-group-item">Jalapenos</li>
+                                    </ul>
+                                    <div class="foodInformation mt-2 py-0 mx-0 border-top border-warning border-2">
+                                        <p class="text-danger fw-bold">Price<span class="float-end">$0.50 Each</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-6 d-flex justify-content-center flex-column">
+                                <h7 class="text-center fw-bold text-warning">Cheeses!</h7>
+                                <ul class="list-group">
+                                    <li class="list-group-item">American</li>
+                                    <li class="list-group-item">Cheddar</li>
+                                    <li class="list-group-item">Pepper Jack</li>
+                                    <li class="list-group-item">Provolone</li>
+                                    <li class="list-group-item">Swiss</li>
+                                    <li class="list-group-item">Blue Cheese Crumbles</li>
+                                </ul>
+                                <div class="foodInformation mt-2 py-0 mx-0 border-top border-warning border-2">
+                                    <p class="text-danger fw-bold">Price<span class="float-end">$0.50 Each</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Price<span class="float-end">$9.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="entreesMenu" class="menuSection">
+        <h3 class="text-center bg-warning text-white py-1">Entrees</h3>
+        <div class="cardGroup row px-1 px-sm-1 px-lg-5 mx-lg-5 mx-2 mx-sm-2 mx-md-2">
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Sweet Tomato Glazed Meatloaf</h5>
+                        <h6 class="text-center text-danger fw-bold">House Specialty</h6>
+                        <p class="card-text px-4">House-made meatloaf, lightly stuffed with chopped green peppers and onions, topped with a traditional sweet tomato glaze and prepared with the same love mom put in hers!</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Price<span class="float-end">$14.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">House Made Chicken Pot Pie</h5>
+                        <h6 class="text-center text-danger fw-bold">House Specialty</h6>
+                        <p class="card-text px-4">A meal in itself! tender chicken married with celery, onions, carrots and peas in a rich creamy sauce. Topped with a flaky puff pastry (No sides included)</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold m-0">Regular Style<span class="float-end">$13.00</span></p>
+                        <p class="text-danger fw-bold m-0">Vegetarian Style<span class="float-end">$10.50</span></p>
+                        <p class="text-danger fw-bold">Add cup of soup or salad<span class="float-end">+$2.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Filet Mignon</h5>
+                        <p class="card-text px-4">Our delicious 8 oz, hand cut, bacon wrapped and seasoned tenderloin filet, grilled your way & topped with our herb butter</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Price<span class="float-end">$18.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">BBQ Pork Steak</h5>
+                        <p class="card-text px-4">A St. Louis Tradition! Our 16 oz grilled pork steak, brushed with tangy BBQ sauce</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Price<span class="float-end">$13.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Chicken Tender Platter</h5>
+                        <p class="card-text px-4">3 house cut chicken breast tenders, deep fried golden brown and served tossed in your choice of dipping sauce</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Price<span class="float-end">$13.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Fish 'n chips Pallter</h5>
+                        <p class="card-text px-4">Three large fillets of tender, beer battered cod, deep fried to golden brown and served on a bed of Fries, served with tartar sauce and choice of 1 side.</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Price<span class="float-end">$14.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pastaMenu" class="menuSection">
+        <h3 class="text-center bg-warning text-white py-1">Pasta</h3>
+        <div class="cardGroup row px-1 px-sm-1 px-lg-5 mx-lg-5 mx-2 mx-sm-2 mx-md-2">
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Cajun Shrimp and Sausage Pasta</h5>
+                        <p class="card-text px-4">Sautéed shrimp and andouille sausage served in a Cajun cream sauce with penne pasta, topped with diced tomatoes, green onions & parmesan</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold m-0">Regular<span class="float-end">$14.50</span></p>
+                        <p class="text-danger fw-bold m-0">All Shrimp<span class="float-end">$17.50</span></p>
+                        <p class="text-danger fw-bold">No Shrimp or Sausage<span class="float-end">$10.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Tenderloin & Bacon Pasta</h5>
+                        <p class="card-text px-4">Sautéed beef tenderloin, bacon and mushrooms make up one of Chef's delicious specialties, with pasta in a garlic and cheese cream sauce, finished off with diced tomatoes, green onions and parmesan cheese</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Regular<span class="float-end">$15.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Pasta With Meat Sauce</h5>
+                        <p class="card-text px-4">Penne pasta topped with our house made meat sauce</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold m-0">Price<span class="float-end">$11.00</span></p>
+                        <p class="text-danger fw-bold">Add Grilled Chicken<span class="float-end">+$2.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pizzaMenu" class="menuSection">
+        <h3 class="text-center bg-warning text-white py-1">Pizza</h3>
+        <div class="cardGroup row px-1 px-sm-1 px-lg-5 mx-lg-5 mx-2 mx-sm-2 mx-md-2">
+            <div class="col-12 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Build Your Own Pizza!</h5>
+                        <p class="card-text px-4">St. Louis thin crust and our house-made pizza sauce, your favorite toppings and our blend of provolone, mozzarella & Parmesan cheese.</p>
+                        <h6 class="fw-bold text-danger text-center">ADD YOUR CHOICE OF TOPPINGS!</h6>
+                        <h6 class="text-warning text-center">1 Topping Included!</h6>
+                        <div class="toppingsGroup mx-5 px-5">
+                            <ul class="list-group text-center">
+                                <li class="list-group-item">Pepperoni</li>
+                                <li class="list-group-item">Sausage</li>
+                                <li class="list-group-item">Ham</li>
+                                <li class="list-group-item">Bacon</li>
+                                <li class="list-group-item">Hamburger</li>
+                                <li class="list-group-item">Tomatoes</li>
+                                <li class="list-group-item">Green Pepper</li>
+                                <li class="list-group-item">Onion</li>
+                                <li class="list-group-item">Mushrooms</li>
+                                <li class="list-group-item">Black Olives</li>
+                                <li class="list-group-item">Jalapenos</li>
+                                <li class="list-group-item">Cheese</li>
+                            </ul>
+                            <div class="foodInformation mt-2 py-0 border-top border-warning border-2">
+                                <p class="text-danger fw-bold">9"<span class="float-end">+$0.50</span></p>
+                                <p class="text-danger fw-bold">12"<span class="float-end">+$1.00</span></p>
+                                <p class="text-danger fw-bold">16"<span class="float-end">+$2.00</span></p>
+                            </div>
+                        </div>
+                            
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">9"<span class="float-end">$9.00</span></p>
+                                <p class="text-danger fw-bold">12"<span class="float-end">$11.00</span></p>
+                                <p class="text-danger fw-bold">16"<span class="float-end">$14.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="specialtyPizzaMenu" class="menuSection">
+        <h3 class="text-center bg-warning text-white py-1">Specialty Pizza</h3>
+        <div class="cardGroup row px-1 px-sm-1 px-lg-5 mx-lg-5 mx-2 mx-sm-2 mx-md-2">
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">4 Meat Pizza</h5>
+                        <p class="card-text px-4">Pepperoni, Sausage, Ham and Bacon</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Veggie Pizza</h5>
+                        <p class="card-text px-4">Diced tomatoes, green peppers, onions, mushrooms and black olives</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Buffalo Chicken Pizza</h5>
+                        <h6 class="fw-bold text-danger text-center">House Specialty</h6>
+                        <p class="card-text px-4">Our buffalo sauce topped with chicken, bacon, onions and bleu cheese</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Supreme Pizza</h5>
+                        <p class="card-text px-4">Pepperoni, sausage, green peppers, onions, mushrooms and black olives</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foodInformation mt-2 mx-3 py-0 border-top border-warning border-2">
+            <p class="text-danger fw-bold">9"<span class="float-end">$12.00</span></p>
+            <p class="text-danger fw-bold">12"<span class="float-end">$14.00</span></p>
+            <p class="text-danger fw-bold">16"<span class="float-end">$16.00</span></p>
+        </div>
+    </div>
+    <div id="soupsaladMenu" class="menuSection">
+        <h3 class="bg-warning text-center py-1 text-white">Soups & Salads</h3>
+        <div class="cardGroup row px-1 px-sm-1 px-lg-5 mx-lg-5 mx-2 mx-sm-2 mx-md-2">
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">House Made Soup of The Day</h5>
+                        <h6 class="text-center fw-bold text-danger">House Specialty</h6>
+                        <p class="card-text px-4">Try one of our delicious house-made daily soups for a starter! Available in a cup or bowl. Ask your server for today's selection.</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold m-0">Cup<span class="float-end">$3.00</span></p>
+                        <p class="text-danger fw-bold">Bowl<span class="float-end">$5.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">House Salad</h5>
+                        <p class="card-text px-4">Mixed greens with red onions, cucumbers and diced tomatoes topped with a provolone-mozzarella blend and house-made croutons. Served with your choice of dressing.</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold m-0">Side<span class="float-end">$4.00</span></p>
+                        <p class="text-danger fw-bold">Entrée<span class="float-end">$7.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Caesar Salad</h5>
+                        <p class="card-text px-4">Crisp romaine lettuce tossed in a creamy Caesar dressing and sprinkled with parmesan cheese and tossed in house made croutons.</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold m-0">Side<span class="float-end">$4.00</span></p>
+                        <p class="text-danger fw-bold">Entrée<span class="float-end">$7.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Cobb Salad</h5>
+                        <p class="card-text px-4">Mixed greens presented with diced chicken, bacon, bleu cheese, diced tomatoes, diced eggs, black olives and avocado. Served with your choice of dressing</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Price<span class="float-end">$11.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="wrapMenu" class="menuSection">
+        <h3 class="bg-warning text-center py-1 text-white">Wraps</h3>
+        <div class="cardGroup row px-1 px-sm-1 px-lg-5 mx-lg-5 mx-2 mx-sm-2 mx-md-2">
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Turkey Avocado Wrap</h5>
+                        <p class="card-text px-4">Turkey, bacon, tomatoes, lettuce, avocado, ranch dressing and our three cheese blend wrapped in your choice of flour or wheat tortilla</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Price<span class="float-end">$11.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Buffalo Chicken Wrap</h5>
+                        <p class="card-text px-4">Deep fried chicken breast strips topped and drizzled with ranch and buffalo sauce, layered with our three cheese blend, lettuce and diced tomatoes. Wrapped in your choice of flour or wheat tortilla</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Price<span class="float-end">$11.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Veggie Wrap</h5>
+                        <p class="card-text px-4">Lettuce, tomato, onion, cucumber, avocado and a three cheese blend. Wrapped in a wheat tortilla</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Price<span class="float-end">$9.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sidesMenu" class="menuSection">
+        <h3 class="bg-warning text-center text-white py-1">A La Carte</h3>
+        <div class="cardGroup row px-1 px-sm-1 px-lg-5 mx-lg-5 mx-2 mx-sm-2 mx-md-2">
+            <div class="col-12 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item text-danger fw-bold">French Fries<span class="float-end">$3.00</span></li>
+                            <li class="list-group-item text-danger fw-bold">Sweet Potato Tots<span class="float-end">$3.00</span></li>
+                            <li class="list-group-item text-danger fw-bold">Onion Tanglers<span class="float-end">$3.00</span></li>
+                            <li class="list-group-item text-danger fw-bold">House Made Pub Chips<span class="float-end">$4.00</span></li>
+                            <li class="list-group-item text-danger fw-bold">Home Style Green Beans<span class="float-end">$3.00</span></li>
+                            <li class="list-group-item text-danger fw-bold">House Made Mashed Potatoes & Gravy<span class="float-end">$3.00</span></li>
+                            <li class="list-group-item text-danger fw-bold">Extra Side of Dressing<span class="float-end">Small $0.50 | Large $1.00</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="kidsMenu" class="menuSection">
+        <h3 class="bg-warning text-center text-white py-1">Junior Turtles</h3>
+        <div class="cardGroup row px-1 px-sm-1 px-lg-5 mx-lg-5 mx-2 mx-sm-2 mx-md-2">
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Two Chicken Stripes with Fries</h5>
+                        <p class="card-text px-4">5 oz of our moise and juicy strips of tender chicken breast that are hand battered and served with fries just like the Big Turtles!</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Price<span class="float-end">$5.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Junior Cheese Pizza</h5>
+                        <p class="card-text px-4">9" all cheese pizza</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Price<span class="float-end">$5.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Kid's Pasta</h5>
+                        <p class="card-text px-4">A small serving of our penne pasta served with red or white sauce</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Price<span class="float-end">$5.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
+                <div class="card border border-primary border-2" style="width: 50rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Toasted Cheese sandwich</h5>
+                        <p class="card-text px-4">Our white bread with American Cheese toasted golden brown</p>
+                    </div>
+                    <div class="foodInformation mt-2 py-0 mx-3 border-top border-warning border-2">
+                        <p class="text-danger fw-bold">Price<span class="float-end">$11.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include footer.ejs %>
+</body>
+<script src="bootstrap.min.js"></script>
+<script src="/javascripts/customDrop.js"></script>
+
+</html>

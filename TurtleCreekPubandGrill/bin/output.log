@@ -1,0 +1,42 @@
+
+> turtlecreekpubandgrill@0.0.0 start
+> node ./bin/www
+
+[0mGET / [32m200 [0m13.389 ms - 14647[0m
+[0mGET /font/bootstrap-icons.css [32m200 [0m4.549 ms - 73271[0m
+[0mGET /stylesheets/customStyles.css [32m200 [0m4.080 ms - 200805[0m
+[0mGET /stylesheets/style.css [32m200 [0m2.513 ms - 1597[0m
+[0mGET /bootstrap.min.js [32m200 [0m31.266 ms - 59219[0m
+[0mGET /images/mainLogo.png [32m200 [0m2.658 ms - 146714[0m
+[0mGET /font/fonts/bootstrap-icons.woff2?30af91bf14e37666a085fb8a161ff36d [32m200 [0m1.809 ms - 92064[0m
+[0mGET /images/icons/android-icon-192x192.png [32m200 [0m1.678 ms - 34571[0m
+[0mGET /images/icons/favicon-16x16.png [32m200 [0m0.768 ms - 1234[0m
+[0mGET / [32m200 [0m3.447 ms - 14647[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.973 ms - 1597[0m
+[0mGET /bootstrap.min.js [36m304 [0m1.320 ms - -[0m
+[0mGET /images/mainLogo.png [32m200 [0m2.871 ms - 146714[0m
+[0mGET /font/bootstrap-icons.css [32m200 [0m2.299 ms - 73271[0m
+[0mGET /stylesheets/customStyles.css [32m200 [0m1.583 ms - 200805[0m
+[0mGET /images/OwnersParade.JPG [32m200 [0m1.205 ms - 2357970[0m
+[0mGET /images/GoldenDog.jpg [32m200 [0m2.193 ms - 614560[0m
+[0mGET /images/christmasSinging.jpg [32m200 [0m1.040 ms - 765677[0m
+[0mGET /font/fonts/bootstrap-icons.woff2?30af91bf14e37666a085fb8a161ff36d [32m200 [0m1.055 ms - 92064[0m
+[0mGET /images/icons/favicon-32x32.png [32m200 [0m0.869 ms - 2347[0m
+[0mGET / [32m200 [0m2.104 ms - 14647[0m
+[0mGET / [32m200 [0m3.816 ms - 14647[0m
+[0mGET / [32m200 [0m2.088 ms - 14647[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.686 ms - -[0m
+[0mGET /images/mainLogo.png [36m304 [0m0.445 ms - -[0m
+[0mGET /stylesheets/customStyles.css [36m304 [0m0.474 ms - -[0m
+[0mGET /font/bootstrap-icons.css [36m304 [0m0.697 ms - -[0m
+[0mGET /images/icons/favicon-16x16.png [36m304 [0m0.614 ms - -[0m
+[0mGET /font/fonts/bootstrap-icons.woff2?30af91bf14e37666a085fb8a161ff36d [36m304 [0m0.765 ms - -[0m
+[0mGET /images/icons/android-icon-192x192.png [36m304 [0m1.293 ms - -[0m
+Terminated
+npm ERR! code 143
+npm ERR! path /home/jdouglas1999/websites/TurtleCreekPubandGrill/TurtleCreekPubandGrill
+npm ERR! command failed
+npm ERR! command sh -c node ./bin/www
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/jdouglas1999/.npm/_logs/2022-02-17T07_51_53_389Z-debug.log
